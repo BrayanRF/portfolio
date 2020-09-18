@@ -1,4 +1,4 @@
-# portifolio
+# Portfolio
 This is an example of a portfolio for developers
 
 ## Tasks
