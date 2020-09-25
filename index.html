@@ -210,6 +210,37 @@
                     </div>
                 </div>
             </section><!--End of contact section-->
+
+            <section class="budget-section"><!--Budget section start-->
+                <div class="budget-wrapper">
+                    <h1>Make a budget</h1>
+
+                    <form>
+                        <label for="quantity">Number of Pages</label>
+                        <input type="number" min="1" name="quantity" id="quantity">
+
+                        <label for="js">I need a js script</label>
+                        <input type="checkbox" name="js" id="js">
+
+                        <label>Layout</label>
+                        <div class="layout-group">
+                            <div>
+                                <input type="radio" name="layout" id="layout-yes">
+                                <label for="layout-yes">I need a layout</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="layout" id="layout-no">
+                                <label for="layout-no">I already have a layout</label>
+                            </div>
+                        </div>
+
+                        <label for="deadline">Deadline</label>
+                        <input type="range" name="deadline" id="deadline">
+                        <button class="btn btn-budget" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section><!--End of budget section-->
         </div>
     </body>
 

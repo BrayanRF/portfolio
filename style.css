@@ -338,6 +338,10 @@ header {
 
 /* Projects section layout */
 
+.projects-section {
+    margin-bottom: 50px;
+}
+
 .projects {
     display: flex;
     justify-content: space-evenly;
@@ -433,7 +437,7 @@ header {
 
 .contact-left {
     width: 35%;
-    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(img/contact.jpg);
+    background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url("img/contact.jpg");
     background-size: cover;
 }
 
@@ -499,4 +503,73 @@ header {
     height: 2rem;
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+/* Budget section layout */
+
+.budget-section {
+    width: 100%;
+    height: 100vh;
+    background: url("img/budget.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff99;
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.budget-wrapper h1 {
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0 3rem;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.budget-wrapper form {
+    margin: 4rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.budget-wrapper label {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.budget-wrapper input[type="number"] {
+    font-family: var(--font-secondary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-budget {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    grid-column: 2;
+    width: 100%;
 }
