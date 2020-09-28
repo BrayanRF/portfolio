@@ -225,18 +225,21 @@
                         <label>Layout</label>
                         <div class="layout-group">
                             <div>
-                                <input type="radio" name="layout" id="layout-yes">
+                                <input type="radio" name="layout" id="layoutYes">
                                 <label for="layout-yes">I need a layout</label>
                             </div>
 
                             <div>
-                                <input type="radio" name="layout" id="layout-no">
+                                <input type="radio" name="layout" id="layoutNo">
                                 <label for="layout-no">I already have a layout</label>
                             </div>
                         </div>
 
                         <label for="deadline">Deadline</label>
-                        <input type="range" name="deadline" id="deadline">
+                        <input type="range" name="deadline" id="deadline" min="1" max="10" value="10">
+
+                        <label id="price">$ 0.00</label>
+
                         <button class="btn btn-budget" type="submit">Submit</button>
                     </form>
                 </div>
